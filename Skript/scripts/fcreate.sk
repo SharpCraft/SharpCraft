@@ -1,0 +1,7 @@
+on command "f create <faction_name>":
+    add 1 to {%player%.facscreadas}
+    if {%players%.facscreadas} is equal than 0:
+        exit
+    else:
+        make console execute "econ sub %player% 1000"
+        exit

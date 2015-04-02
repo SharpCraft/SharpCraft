@@ -1,0 +1,4 @@
+on command "f enemy <faction>":
+    set {%arg 1%.enemydate} to now
+    if {%player%.enemycooldown} :
+        
